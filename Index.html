@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width
     initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Document</title>
 </head>
 <body>
@@ -16,14 +17,19 @@
     <main>
 
         <form >
-            <label for="nomeEvento">Evento</label>
-            <input type="text" name="nomeEvento" id="nomeEvento" placeholder="Nome Evento" required>
+            <div>
+                <label for="nomeEvento"><strong>Evento</strong></label>
+                <input type="text" name="nomeEvento" id="nomeEvento" placeholder="Nome Evento" required>
+            </div>
 
-            <label for="nomeConvidado">Convidado</label>
-            <input type="text" name="nomeConvidado" id="nomeConvidado" placeholder="nome do convidado" required>
+            <div>
+                <label for="nomeConvidado"><strong>Convidado</strong></label>
+                <input type="text" name="nomeConvidado" id="nomeConvidado" placeholder="nome do convidado" required>
+            </div>
+
 
             
-            <div id="menu">
+            <div id="clasificacao">
                 <label><strong>Parentesco</strong></label>
                 <select id="parentesco" required>
                     <option selected disabled value="">Selecione</option>
@@ -42,12 +48,15 @@
                 <select id="relacionamento" required>
                     <option selected disabled value="">Selecione</option>
                     <option>Esposo (a)</option>
-                    <option>Parente distante</option>
+                    <option>Namorado (a)</option>
                 </select>
                 
             </div>
 
-            <button class="botao" type="button" onsubmit >Adicionar</button>
+            <div id="botao">
+                <button id ="adicionaBtn"class="botao" type="button" onsubmit >Adicionar</button>
+            </div>
+
         </form>
 
         <div id="exibeLista">
