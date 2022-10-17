@@ -42,15 +42,3 @@ function pontuaçãoProximidade(dado){
     }
     console.log(pontuacao)
 }
-
-
-if(dado == 'Parente proximo'){
-    pontuacao = pontuacao + 5
-
-}else if(dado == 'Melhor amigo'){
-    pontuacao = pontuacao + 5
-
-}else (ifdado == 'Esposo (a)'){
-    pontuacao = pontuacao + 5
-
-}
